@@ -1,0 +1,7 @@
+create dbComputerStudies;
+
+use dbComputerStudies;
+
+create table tbl_Users (id int auto_increment Primary key, studentId varchar(10), password varchar(18), FullName varchar(255), YearSec varchar(255), Program varchar(5), Address varchar(255), ContactNo varchar(11), email varchar(255));
+
+create table tbl_UserCourse (id int auto_increment Primary Key, StudentId varchar(10), Courses varchar(255));
