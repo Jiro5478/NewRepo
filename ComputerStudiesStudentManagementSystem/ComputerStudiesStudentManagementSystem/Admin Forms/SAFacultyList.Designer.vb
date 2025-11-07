@@ -107,7 +107,8 @@ Partial Class SAFacultyList
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
         SAdgvFacList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        SAdgvFacList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        SAdgvFacList.ColumnHeadersHeight = 4
+        SAdgvFacList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
         DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
@@ -134,7 +135,7 @@ Partial Class SAFacultyList
         SAdgvFacList.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
         SAdgvFacList.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F)
         SAdgvFacList.ThemeStyle.HeaderStyle.ForeColor = Color.White
-        SAdgvFacList.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        SAdgvFacList.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         SAdgvFacList.ThemeStyle.HeaderStyle.Height = 4
         SAdgvFacList.ThemeStyle.ReadOnly = False
         SAdgvFacList.ThemeStyle.RowsStyle.BackColor = Color.White
