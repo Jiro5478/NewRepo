@@ -45,21 +45,25 @@ Public Class LoginForm
                             If Regex.IsMatch(username, "^\d{3}$") Then
                                 ' 3-digit number → faculty
                                 role = "faculty"
-                            ElseIf Regex.IsMatch(username, "^\d{8}-[NCMSE]$") Then
-                                ' 8 digits + dash + letter → student
+                            ElseIf Regex.IsMatch(username, "^\d{4}-\d{4}$") Then
+                                ' New student format: 0000-0000
                                 role = "student"
                             Else
-                                MessageBox.Show("Invalid username format.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                MessageBox.Show("Invalid username format. Must be '0000-0000' for students or 3 digits for faculty.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
                                 Return
                             End If
 
                             ' Open the correct dashboard
                             If role = "faculty" Then
+                                clearFields()
                                 Dim facultyForm As New DashboardForm()
                                 facultyForm.Show()
                             Else
+                                LoadStudentInfo(username)
+                                clearFields()
                                 Dim studentForm As New StudentDashboard()
                                 studentForm.Show()
+
                             End If
                         Else
                             MessageBox.Show("Invalid username or password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -72,6 +76,7 @@ Public Class LoginForm
         End Try
     End Sub
 
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Try
             MessageBox.Show("Are you sure you want to exit the application?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -82,5 +87,9 @@ Public Class LoginForm
         Catch ex As Exception
 
         End Try
+    End Sub
+    Private Sub clearFields()
+        txtUsername.Clear()
+        txtPassword.Clear()
     End Sub
 End Class

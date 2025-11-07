@@ -42,9 +42,9 @@ Partial Class attendanceHistory
         lblStudProgram = New Label()
         lblTodayCount = New Label()
         pnlHeader = New Guna.UI2.WinForms.Guna2Panel()
+        btnBack = New Guna.UI2.WinForms.Guna2Button()
         Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Panel1 = New Panel()
-        btnBack = New Guna.UI2.WinForms.Guna2Button()
         CType(dvgAttendanceHistory, ComponentModel.ISupportInitialize).BeginInit()
         pnlHeader.SuspendLayout()
         Panel1.SuspendLayout()
@@ -74,13 +74,11 @@ Partial Class attendanceHistory
         dvgAttendanceHistory.DefaultCellStyle = DataGridViewCellStyle3
         dvgAttendanceHistory.Dock = DockStyle.Bottom
         dvgAttendanceHistory.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
-        dvgAttendanceHistory.Location = New Point(0, 311)
-        dvgAttendanceHistory.Margin = New Padding(3, 4, 3, 4)
+        dvgAttendanceHistory.Location = New Point(0, 233)
         dvgAttendanceHistory.Name = "dvgAttendanceHistory"
         dvgAttendanceHistory.RowHeadersVisible = False
         dvgAttendanceHistory.RowHeadersWidth = 51
-        dvgAttendanceHistory.RowTemplate.Height = 25
-        dvgAttendanceHistory.Size = New Size(914, 172)
+        dvgAttendanceHistory.Size = New Size(840, 129)
         dvgAttendanceHistory.TabIndex = 0
         dvgAttendanceHistory.ThemeStyle.AlternatingRowsStyle.BackColor = Color.White
         dvgAttendanceHistory.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -110,10 +108,10 @@ Partial Class attendanceHistory
         lblFullName.AutoSize = True
         lblFullName.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         lblFullName.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        lblFullName.Location = New Point(363, 161)
-        lblFullName.Margin = New Padding(5, 0, 5, 0)
+        lblFullName.Location = New Point(338, 121)
+        lblFullName.Margin = New Padding(4, 0, 4, 0)
         lblFullName.Name = "lblFullName"
-        lblFullName.Size = New Size(129, 28)
+        lblFullName.Size = New Size(105, 21)
         lblFullName.TabIndex = 6
         lblFullName.Text = "Course Code"
         ' 
@@ -123,10 +121,10 @@ Partial Class attendanceHistory
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label1.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        Label1.Location = New Point(499, 161)
-        Label1.Margin = New Padding(5, 0, 5, 0)
+        Label1.Location = New Point(457, 121)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(138, 28)
+        Label1.Size = New Size(112, 21)
         Label1.TabIndex = 7
         Label1.Text = "Course Name"
         ' 
@@ -136,10 +134,10 @@ Partial Class attendanceHistory
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label2.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        Label2.Location = New Point(637, 161)
-        Label2.Margin = New Padding(5, 0, 5, 0)
+        Label2.Location = New Point(577, 121)
+        Label2.Margin = New Padding(4, 0, 4, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(129, 28)
+        Label2.Size = New Size(104, 21)
         Label2.TabIndex = 8
         Label2.Text = "Course Time"
         ' 
@@ -149,10 +147,10 @@ Partial Class attendanceHistory
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label3.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        Label3.Location = New Point(769, 161)
-        Label3.Margin = New Padding(5, 0, 5, 0)
+        Label3.Location = New Point(693, 121)
+        Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(83, 28)
+        Label3.Size = New Size(67, 21)
         Label3.TabIndex = 9
         Label3.Text = "Time In"
         ' 
@@ -162,10 +160,10 @@ Partial Class attendanceHistory
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label4.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        Label4.Location = New Point(850, 161)
-        Label4.Margin = New Padding(5, 0, 5, 0)
+        Label4.Location = New Point(764, 121)
+        Label4.Margin = New Padding(4, 0, 4, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(71, 28)
+        Label4.Size = New Size(57, 21)
         Label4.TabIndex = 10
         Label4.Text = "Status"
         ' 
@@ -175,10 +173,10 @@ Partial Class attendanceHistory
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label5.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        Label5.Location = New Point(627, 427)
-        Label5.Margin = New Padding(5, 0, 5, 0)
+        Label5.Location = New Point(569, 320)
+        Label5.Margin = New Padding(4, 0, 4, 0)
         Label5.Name = "Label5"
-        Label5.Size = New Size(287, 28)
+        Label5.Size = New Size(233, 21)
         Label5.TabIndex = 11
         Label5.Text = "(present,absent,late,excused)"
         ' 
@@ -188,10 +186,10 @@ Partial Class attendanceHistory
         lblStudentFullName.AutoSize = True
         lblStudentFullName.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
         lblStudentFullName.ForeColor = SystemColors.ControlText
-        lblStudentFullName.Location = New Point(5, 12)
-        lblStudentFullName.Margin = New Padding(5, 0, 5, 0)
+        lblStudentFullName.Location = New Point(4, 9)
+        lblStudentFullName.Margin = New Padding(4, 0, 4, 0)
         lblStudentFullName.Name = "lblStudentFullName"
-        lblStudentFullName.Size = New Size(179, 27)
+        lblStudentFullName.Size = New Size(143, 21)
         lblStudentFullName.TabIndex = 13
         lblStudentFullName.Text = "Student FullName:"
         ' 
@@ -201,10 +199,10 @@ Partial Class attendanceHistory
         lblStudentProgram.AutoSize = True
         lblStudentProgram.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
         lblStudentProgram.ForeColor = SystemColors.ControlText
-        lblStudentProgram.Location = New Point(6, 44)
-        lblStudentProgram.Margin = New Padding(5, 0, 5, 0)
+        lblStudentProgram.Location = New Point(5, 33)
+        lblStudentProgram.Margin = New Padding(4, 0, 4, 0)
         lblStudentProgram.Name = "lblStudentProgram"
-        lblStudentProgram.Size = New Size(171, 27)
+        lblStudentProgram.Size = New Size(138, 21)
         lblStudentProgram.TabIndex = 14
         lblStudentProgram.Text = "Student Program:"
         ' 
@@ -214,10 +212,10 @@ Partial Class attendanceHistory
         lblStudentFullN.AutoSize = True
         lblStudentFullN.Font = New Font("Segoe UI", 10F)
         lblStudentFullN.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
-        lblStudentFullN.Location = New Point(189, 15)
-        lblStudentFullN.Margin = New Padding(5, 0, 5, 0)
+        lblStudentFullN.Location = New Point(165, 11)
+        lblStudentFullN.Margin = New Padding(4, 0, 4, 0)
         lblStudentFullN.Name = "lblStudentFullN"
-        lblStudentFullN.Size = New Size(146, 23)
+        lblStudentFullN.Size = New Size(118, 19)
         lblStudentFullN.TabIndex = 15
         lblStudentFullN.Text = "Student FullName"
         ' 
@@ -227,19 +225,19 @@ Partial Class attendanceHistory
         lblStudProgram.AutoSize = True
         lblStudProgram.Font = New Font("Segoe UI", 10F)
         lblStudProgram.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
-        lblStudProgram.Location = New Point(192, 46)
-        lblStudProgram.Margin = New Padding(5, 0, 5, 0)
+        lblStudProgram.Location = New Point(168, 34)
+        lblStudProgram.Margin = New Padding(4, 0, 4, 0)
         lblStudProgram.Name = "lblStudProgram"
-        lblStudProgram.Size = New Size(146, 23)
+        lblStudProgram.Size = New Size(118, 19)
         lblStudProgram.TabIndex = 16
         lblStudProgram.Text = "Student FullName"
         ' 
         ' lblTodayCount
         ' 
         lblTodayCount.AutoSize = True
-        lblTodayCount.Location = New Point(459, 263)
+        lblTodayCount.Location = New Point(402, 197)
         lblTodayCount.Name = "lblTodayCount"
-        lblTodayCount.Size = New Size(206, 20)
+        lblTodayCount.Size = New Size(165, 15)
         lblTodayCount.TabIndex = 17
         lblTodayCount.Text = "Today's Attendance: 0 records"
         ' 
@@ -251,34 +249,10 @@ Partial Class attendanceHistory
         pnlHeader.Dock = DockStyle.Top
         pnlHeader.FillColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         pnlHeader.Location = New Point(0, 0)
-        pnlHeader.Margin = New Padding(3, 4, 3, 4)
         pnlHeader.Name = "pnlHeader"
         pnlHeader.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        pnlHeader.Size = New Size(914, 81)
+        pnlHeader.Size = New Size(840, 61)
         pnlHeader.TabIndex = 18
-        ' 
-        ' Guna2HtmlLabel1
-        ' 
-        Guna2HtmlLabel1.BackColor = Color.Transparent
-        Guna2HtmlLabel1.Font = New Font("Segoe UI Variable Display", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Guna2HtmlLabel1.ForeColor = Color.White
-        Guna2HtmlLabel1.Location = New Point(14, 12)
-        Guna2HtmlLabel1.Margin = New Padding(3, 4, 3, 4)
-        Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Guna2HtmlLabel1.Size = New Size(383, 48)
-        Guna2HtmlLabel1.TabIndex = 0
-        Guna2HtmlLabel1.Text = "ATTENDANCE HISTORY"
-        ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(lblStudentProgram)
-        Panel1.Controls.Add(lblStudentFullName)
-        Panel1.Controls.Add(lblStudProgram)
-        Panel1.Controls.Add(lblStudentFullN)
-        Panel1.Location = New Point(3, 83)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(376, 225)
-        Panel1.TabIndex = 19
         ' 
         ' btnBack
         ' 
@@ -292,19 +266,41 @@ Partial Class attendanceHistory
         btnBack.FillColor = Color.Red
         btnBack.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Bold)
         btnBack.ForeColor = Color.White
-        btnBack.Location = New Point(731, 15)
-        btnBack.Margin = New Padding(3, 4, 3, 4)
+        btnBack.Location = New Point(678, 9)
         btnBack.Name = "btnBack"
         btnBack.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnBack.Size = New Size(171, 45)
+        btnBack.Size = New Size(150, 34)
         btnBack.TabIndex = 23
         btnBack.Text = "Back"
         ' 
+        ' Guna2HtmlLabel1
+        ' 
+        Guna2HtmlLabel1.BackColor = Color.Transparent
+        Guna2HtmlLabel1.Font = New Font("Segoe UI Variable Display", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Guna2HtmlLabel1.ForeColor = Color.White
+        Guna2HtmlLabel1.Location = New Point(12, 9)
+        Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Guna2HtmlLabel1.Size = New Size(304, 38)
+        Guna2HtmlLabel1.TabIndex = 0
+        Guna2HtmlLabel1.Text = "ATTENDANCE HISTORY"
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(lblStudentProgram)
+        Panel1.Controls.Add(lblStudentFullName)
+        Panel1.Controls.Add(lblStudProgram)
+        Panel1.Controls.Add(lblStudentFullN)
+        Panel1.Location = New Point(3, 62)
+        Panel1.Margin = New Padding(3, 2, 3, 2)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(329, 169)
+        Panel1.TabIndex = 19
+        ' 
         ' attendanceHistory
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(914, 483)
+        ClientSize = New Size(840, 362)
         Controls.Add(Panel1)
         Controls.Add(pnlHeader)
         Controls.Add(lblTodayCount)
@@ -316,7 +312,6 @@ Partial Class attendanceHistory
         Controls.Add(lblFullName)
         Controls.Add(dvgAttendanceHistory)
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(3, 4, 3, 4)
         Name = "attendanceHistory"
         Text = "attendanceHistory"
         CType(dvgAttendanceHistory, ComponentModel.ISupportInitialize).EndInit()

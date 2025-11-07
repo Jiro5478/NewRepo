@@ -82,4 +82,10 @@
     Private Sub btnlogout_Click(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Me.Hide()
+        Dim dashboard As New StudentDashboard()
+        dashboard.Show()
+    End Sub
 End Class

@@ -26,12 +26,18 @@
             lblStudentID.Text = SharedData.CurrentStudent("studentId")
             lblYearSection.Text = SharedData.CurrentStudent("YearSec")
         Catch ex As Exception
-            MessageBox.Show("Error loading student dashboard: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Error loading student info: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
     End Sub
+
 
     Private Sub cmbCourse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCourse.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        Me.Hide()
+        Dim loginform As New LoginForm()
+        loginform.Show()
     End Sub
 End Class
