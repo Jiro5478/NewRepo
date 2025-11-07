@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FacultyProfile
+Partial Class FacultyClassList
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -245,7 +245,7 @@ Partial Class FacultyProfile
         ' lblRole
         ' 
         lblRole.Dock = DockStyle.Bottom
-        lblRole.Font = New Font("Segoe UI", 9F)
+        lblRole.Font = New Font("Segoe UI", 9.0F)
         lblRole.ForeColor = Color.White
         lblRole.Location = New Point(0, 105)
         lblRole.Margin = New Padding(4, 0, 4, 0)
@@ -257,7 +257,7 @@ Partial Class FacultyProfile
         ' lblWelcome
         ' 
         lblWelcome.Dock = DockStyle.Top
-        lblWelcome.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        lblWelcome.Font = New Font("Segoe UI", 11.0F, FontStyle.Bold)
         lblWelcome.ForeColor = Color.White
         lblWelcome.Location = New Point(0, 0)
         lblWelcome.Margin = New Padding(4, 0, 4, 0)
@@ -288,7 +288,7 @@ Partial Class FacultyProfile
         ' lblPageTitle
         ' 
         lblPageTitle.AutoSize = True
-        lblPageTitle.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
+        lblPageTitle.Font = New Font("Segoe UI", 14.0F, FontStyle.Bold)
         lblPageTitle.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblPageTitle.Location = New Point(24, 20)
         lblPageTitle.Margin = New Padding(4, 0, 4, 0)
@@ -307,7 +307,7 @@ Partial Class FacultyProfile
         btnMinimize.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnMinimize.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnMinimize.FillColor = Color.FromArgb(CByte(241), CByte(196), CByte(15))
-        btnMinimize.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnMinimize.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         btnMinimize.ForeColor = Color.White
         btnMinimize.Location = New Point(945, 17)
         btnMinimize.Margin = New Padding(4)
@@ -327,7 +327,7 @@ Partial Class FacultyProfile
         btnMaximize.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnMaximize.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnMaximize.FillColor = Color.FromArgb(CByte(46), CByte(204), CByte(113))
-        btnMaximize.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnMaximize.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         btnMaximize.ForeColor = Color.White
         btnMaximize.Location = New Point(998, 17)
         btnMaximize.Margin = New Padding(4)
@@ -347,7 +347,7 @@ Partial Class FacultyProfile
         btnClose.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnClose.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnClose.FillColor = Color.FromArgb(CByte(231), CByte(76), CByte(60))
-        btnClose.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btnClose.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         btnClose.ForeColor = Color.White
         btnClose.Location = New Point(1050, 17)
         btnClose.Margin = New Padding(4)
@@ -382,7 +382,7 @@ Partial Class FacultyProfile
         ' 
         ' FacultyProfile
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1400, 808)
         Controls.Add(pnlContent)

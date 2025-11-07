@@ -65,4 +65,10 @@ Public Class DashboardForm
     Private Sub pnlContent_Paint(sender As Object, e As PaintEventArgs) Handles pnlContent.Paint
 
     End Sub
+
+    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+        Me.Hide()
+        Dim facultyProfile As New FacultyProfile()
+        facultyProfile.Show()
+    End Sub
 End Class

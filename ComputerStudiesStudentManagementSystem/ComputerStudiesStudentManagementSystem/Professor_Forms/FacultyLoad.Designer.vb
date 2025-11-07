@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FacultyProfile
+Partial Class FacultyLoad
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -293,9 +293,9 @@ Partial Class FacultyProfile
         lblPageTitle.Location = New Point(24, 20)
         lblPageTitle.Margin = New Padding(4, 0, 4, 0)
         lblPageTitle.Name = "lblPageTitle"
-        lblPageTitle.Size = New Size(71, 25)
+        lblPageTitle.Size = New Size(123, 25)
         lblPageTitle.TabIndex = 3
-        lblPageTitle.Text = "Profile"
+        lblPageTitle.Text = "Faculty Load"
         ' 
         ' btnMinimize
         ' 
@@ -380,7 +380,7 @@ Partial Class FacultyProfile
         ' 
         Guna2ShadowForm1.TargetForm = Me
         ' 
-        ' FacultyProfile
+        ' FacultyLoad
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -390,7 +390,7 @@ Partial Class FacultyProfile
         Controls.Add(pnlSidebar)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(4)
-        Name = "FacultyProfile"
+        Name = "FacultyLoad"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard - Student Management System"
         pnlSidebar.ResumeLayout(False)
