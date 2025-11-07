@@ -71,4 +71,7 @@
         ' Optional: add event logic here
     End Sub
 
+    Private Sub lblAttendance_Click(sender As Object, e As EventArgs) Handles lblAttendance.Click
+
+    End Sub
 End Class

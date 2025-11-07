@@ -40,8 +40,8 @@ Partial Class StudentDashboard
         btnlogout = New Guna.UI2.WinForms.Guna2Button()
         lblFullName = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        lvlStudentIDValue = New Guna.UI2.WinForms.Guna2HtmlLabel()
         lblStudentID = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         lblYearSection = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         lblAttendance = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -70,12 +70,12 @@ Partial Class StudentDashboard
         btnStudentProfile.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnStudentProfile.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnStudentProfile.FillColor = Color.SeaGreen
-        btnStudentProfile.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Bold)
+        btnStudentProfile.Font = New Font("Segoe UI Variable Small", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnStudentProfile.ForeColor = Color.White
-        btnStudentProfile.Location = New Point(12, 156)
+        btnStudentProfile.Location = New Point(12, 205)
         btnStudentProfile.Name = "btnStudentProfile"
         btnStudentProfile.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        btnStudentProfile.Size = New Size(150, 34)
+        btnStudentProfile.Size = New Size(129, 40)
         btnStudentProfile.TabIndex = 3
         btnStudentProfile.Text = "Profile"
         ' 
@@ -101,71 +101,71 @@ Partial Class StudentDashboard
         ' lblFullName
         ' 
         lblFullName.BackColor = Color.Transparent
-        lblFullName.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        lblFullName.Location = New Point(125, 76)
+        lblFullName.Font = New Font("Arial", 15.75F)
+        lblFullName.Location = New Point(110, 132)
         lblFullName.Name = "lblFullName"
-        lblFullName.Size = New Size(68, 23)
+        lblFullName.Size = New Size(86, 26)
         lblFullName.TabIndex = 2
         lblFullName.Text = "Fullname"
         ' 
         ' Guna2HtmlLabel3
         ' 
         Guna2HtmlLabel3.BackColor = Color.Transparent
-        Guna2HtmlLabel3.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        Guna2HtmlLabel3.Location = New Point(6, 101)
+        Guna2HtmlLabel3.Font = New Font("Arial", 15.75F)
+        Guna2HtmlLabel3.Location = New Point(12, 164)
         Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Guna2HtmlLabel3.Size = New Size(113, 23)
+        Guna2HtmlLabel3.Size = New Size(151, 26)
         Guna2HtmlLabel3.TabIndex = 7
         Guna2HtmlLabel3.Text = "Year & Section:"
+        ' 
+        ' lvlStudentIDValue
+        ' 
+        lvlStudentIDValue.BackColor = Color.Transparent
+        lvlStudentIDValue.Font = New Font("Arial", 15.75F)
+        lvlStudentIDValue.Location = New Point(122, 100)
+        lvlStudentIDValue.Name = "lvlStudentIDValue"
+        lvlStudentIDValue.Size = New Size(104, 26)
+        lvlStudentIDValue.TabIndex = 1
+        lvlStudentIDValue.Text = "Student-Id:"
         ' 
         ' lblStudentID
         ' 
         lblStudentID.BackColor = Color.Transparent
-        lblStudentID.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        lblStudentID.Location = New Point(125, 53)
+        lblStudentID.Font = New Font("Arial", 15.75F)
+        lblStudentID.Location = New Point(12, 100)
         lblStudentID.Name = "lblStudentID"
-        lblStudentID.Size = New Size(86, 23)
-        lblStudentID.TabIndex = 1
+        lblStudentID.Size = New Size(104, 26)
+        lblStudentID.TabIndex = 6
         lblStudentID.Text = "Student-Id:"
-        ' 
-        ' Guna2HtmlLabel2
-        ' 
-        Guna2HtmlLabel2.BackColor = Color.Transparent
-        Guna2HtmlLabel2.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        Guna2HtmlLabel2.Location = New Point(6, 53)
-        Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Guna2HtmlLabel2.Size = New Size(86, 23)
-        Guna2HtmlLabel2.TabIndex = 6
-        Guna2HtmlLabel2.Text = "Student-Id:"
         ' 
         ' lblYearSection
         ' 
         lblYearSection.BackColor = Color.Transparent
-        lblYearSection.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        lblYearSection.Location = New Point(125, 101)
+        lblYearSection.Font = New Font("Arial", 15.75F)
+        lblYearSection.Location = New Point(169, 164)
         lblYearSection.Name = "lblYearSection"
-        lblYearSection.Size = New Size(128, 23)
+        lblYearSection.Size = New Size(166, 26)
         lblYearSection.TabIndex = 3
         lblYearSection.Text = "Year And Section"
         ' 
         ' Guna2HtmlLabel1
         ' 
         Guna2HtmlLabel1.BackColor = Color.Transparent
-        Guna2HtmlLabel1.Font = New Font("Segoe UI Variable Text Semibold", 12F, FontStyle.Bold)
-        Guna2HtmlLabel1.Location = New Point(6, 76)
+        Guna2HtmlLabel1.Font = New Font("Arial", 15.75F)
+        Guna2HtmlLabel1.Location = New Point(12, 132)
         Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Guna2HtmlLabel1.Size = New Size(72, 23)
+        Guna2HtmlLabel1.Size = New Size(92, 26)
         Guna2HtmlLabel1.TabIndex = 5
         Guna2HtmlLabel1.Text = "Fullname:"
         ' 
         ' lblAttendance
         ' 
         lblAttendance.BackColor = Color.Transparent
-        lblAttendance.Font = New Font("Segoe UI Variable Display", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAttendance.Font = New Font("Segoe UI Variable Display", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblAttendance.ForeColor = Color.White
-        lblAttendance.Location = New Point(12, 9)
+        lblAttendance.Location = New Point(23, 12)
         lblAttendance.Name = "lblAttendance"
-        lblAttendance.Size = New Size(182, 38)
+        lblAttendance.Size = New Size(213, 45)
         lblAttendance.TabIndex = 0
         lblAttendance.Text = "ATTENDANCE"
         ' 
@@ -177,20 +177,15 @@ Partial Class StudentDashboard
         ' 
         ' pnlHeader
         ' 
-        pnlHeader.Controls.Add(lblAttendance)
-        pnlHeader.Controls.Add(lblFullName)
         pnlHeader.Controls.Add(btnlogout)
-        pnlHeader.Controls.Add(lblStudentID)
-        pnlHeader.Controls.Add(Guna2HtmlLabel3)
-        pnlHeader.Controls.Add(Guna2HtmlLabel1)
-        pnlHeader.Controls.Add(lblYearSection)
-        pnlHeader.Controls.Add(Guna2HtmlLabel2)
+        pnlHeader.Controls.Add(lblAttendance)
         pnlHeader.CustomizableEdges = CustomizableEdges5
+        pnlHeader.Dock = DockStyle.Top
         pnlHeader.FillColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        pnlHeader.Location = New Point(0, -4)
+        pnlHeader.Location = New Point(0, 0)
         pnlHeader.Name = "pnlHeader"
         pnlHeader.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        pnlHeader.Size = New Size(804, 154)
+        pnlHeader.Size = New Size(801, 80)
         pnlHeader.TabIndex = 0
         ' 
         ' cmbCourse
@@ -204,7 +199,7 @@ Partial Class StudentDashboard
         cmbCourse.Font = New Font("Segoe UI", 10F)
         cmbCourse.ForeColor = Color.FromArgb(CByte(68), CByte(88), CByte(112))
         cmbCourse.ItemHeight = 30
-        cmbCourse.Location = New Point(245, 213)
+        cmbCourse.Location = New Point(246, 271)
         cmbCourse.Name = "cmbCourse"
         cmbCourse.ShadowDecoration.CustomizableEdges = CustomizableEdges12
         cmbCourse.Size = New Size(332, 36)
@@ -220,12 +215,12 @@ Partial Class StudentDashboard
         btnPresent.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnPresent.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnPresent.FillColor = Color.SeaGreen
-        btnPresent.Font = New Font("Segoe UI Variable Display", 15.75F, FontStyle.Bold)
+        btnPresent.Font = New Font("Segoe UI Variable Display", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnPresent.ForeColor = Color.White
-        btnPresent.Location = New Point(329, 279)
+        btnPresent.Location = New Point(319, 342)
         btnPresent.Name = "btnPresent"
         btnPresent.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        btnPresent.Size = New Size(180, 45)
+        btnPresent.Size = New Size(191, 46)
         btnPresent.TabIndex = 2
         btnPresent.Text = "Present"
         ' 
@@ -249,12 +244,12 @@ Partial Class StudentDashboard
         btnAttendanceHistory.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnAttendanceHistory.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnAttendanceHistory.FillColor = Color.SeaGreen
-        btnAttendanceHistory.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Bold)
+        btnAttendanceHistory.Font = New Font("Segoe UI Variable Small", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnAttendanceHistory.ForeColor = Color.White
-        btnAttendanceHistory.Location = New Point(12, 213)
+        btnAttendanceHistory.Location = New Point(301, 404)
         btnAttendanceHistory.Name = "btnAttendanceHistory"
         btnAttendanceHistory.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        btnAttendanceHistory.Size = New Size(185, 34)
+        btnAttendanceHistory.Size = New Size(236, 40)
         btnAttendanceHistory.TabIndex = 4
         btnAttendanceHistory.Text = "Attendance History"
         ' 
@@ -262,11 +257,17 @@ Partial Class StudentDashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(801, 428)
+        ClientSize = New Size(801, 509)
+        Controls.Add(lblFullName)
+        Controls.Add(lvlStudentIDValue)
         Controls.Add(btnAttendanceHistory)
+        Controls.Add(Guna2HtmlLabel3)
         Controls.Add(pnlHeader)
+        Controls.Add(Guna2HtmlLabel1)
         Controls.Add(btnStudentProfile)
+        Controls.Add(lblYearSection)
         Controls.Add(btnPresent)
+        Controls.Add(lblStudentID)
         Controls.Add(cmbCourse)
         FormBorderStyle = FormBorderStyle.None
         Name = "StudentDashboard"
@@ -275,10 +276,11 @@ Partial Class StudentDashboard
         pnlHeader.ResumeLayout(False)
         pnlHeader.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
-    Friend WithEvents lblStudentID As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lvlStudentIDValue As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents lblAttendance As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents btnlogout As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents lblYearSection As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -286,7 +288,7 @@ Partial Class StudentDashboard
     Friend WithEvents lblFullName As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblStudentID As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents pnlHeader As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnPresent As Guna.UI2.WinForms.Guna2Button

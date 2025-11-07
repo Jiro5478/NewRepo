@@ -5,6 +5,7 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <StartupObject>ComputerStudiesStudentManagementSystem.My.MyApplication</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
