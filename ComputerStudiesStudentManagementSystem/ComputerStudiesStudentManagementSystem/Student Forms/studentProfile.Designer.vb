@@ -87,7 +87,7 @@ Partial Class studentProfile
         ' 
         lblAddress.Anchor = AnchorStyles.None
         lblAddress.AutoSize = True
-        lblAddress.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblAddress.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblAddress.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblAddress.Location = New Point(389, 20)
         lblAddress.Margin = New Padding(4, 0, 4, 0)
@@ -113,7 +113,7 @@ Partial Class studentProfile
         ' 
         lblProgram.Anchor = AnchorStyles.None
         lblProgram.AutoSize = True
-        lblProgram.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblProgram.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblProgram.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblProgram.Location = New Point(141, 154)
         lblProgram.Margin = New Padding(4, 0, 4, 0)
@@ -139,7 +139,7 @@ Partial Class studentProfile
         ' 
         lblYearSec.Anchor = AnchorStyles.None
         lblYearSec.AutoSize = True
-        lblYearSec.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblYearSec.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblYearSec.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblYearSec.Location = New Point(138, 112)
         lblYearSec.Margin = New Padding(4, 0, 4, 0)
@@ -165,7 +165,7 @@ Partial Class studentProfile
         ' 
         lblFullName.Anchor = AnchorStyles.None
         lblFullName.AutoSize = True
-        lblFullName.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lblFullName.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         lblFullName.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblFullName.Location = New Point(138, 64)
         lblFullName.Margin = New Padding(4, 0, 4, 0)
@@ -191,7 +191,7 @@ Partial Class studentProfile
         ' 
         lblStudentIdValue.Anchor = AnchorStyles.None
         lblStudentIdValue.AutoSize = True
-        lblStudentIdValue.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lblStudentIdValue.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         lblStudentIdValue.ForeColor = Color.FromArgb(CByte(46), CByte(139), CByte(87))
         lblStudentIdValue.Location = New Point(138, 20)
         lblStudentIdValue.Margin = New Padding(4, 0, 4, 0)
@@ -217,7 +217,7 @@ Partial Class studentProfile
         ' 
         lblEnrolledCourses.Anchor = AnchorStyles.None
         lblEnrolledCourses.AutoSize = True
-        lblEnrolledCourses.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblEnrolledCourses.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblEnrolledCourses.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblEnrolledCourses.Location = New Point(211, 377)
         lblEnrolledCourses.Margin = New Padding(4, 0, 4, 0)
@@ -256,7 +256,7 @@ Partial Class studentProfile
         ' 
         lblContactNum.Anchor = AnchorStyles.None
         lblContactNum.AutoSize = True
-        lblContactNum.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblContactNum.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblContactNum.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblContactNum.Location = New Point(470, 64)
         lblContactNum.Margin = New Padding(4, 0, 4, 0)
@@ -269,7 +269,7 @@ Partial Class studentProfile
         ' 
         lblEmailAddress.Anchor = AnchorStyles.None
         lblEmailAddress.AutoSize = True
-        lblEmailAddress.Font = New Font("Segoe UI", 10F, FontStyle.Bold)
+        lblEmailAddress.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
         lblEmailAddress.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         lblEmailAddress.Location = New Point(452, 111)
         lblEmailAddress.Margin = New Padding(4, 0, 4, 0)
@@ -288,7 +288,7 @@ Partial Class studentProfile
         btnBack.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnBack.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnBack.FillColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
-        btnBack.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Bold)
+        btnBack.Font = New Font("Segoe UI Variable Small", 12.0F, FontStyle.Bold)
         btnBack.ForeColor = Color.White
         btnBack.Location = New Point(775, 12)
         btnBack.Name = "btnBack"
@@ -301,7 +301,7 @@ Partial Class studentProfile
         ' 
         Label6.Anchor = AnchorStyles.None
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 10F)
+        Label6.Font = New Font("Segoe UI", 10.0F)
         Label6.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
         Label6.Location = New Point(618, 306)
         Label6.Margin = New Padding(4, 0, 4, 0)
@@ -314,7 +314,7 @@ Partial Class studentProfile
         ' 
         Label9.Anchor = AnchorStyles.None
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 10F)
+        Label9.Font = New Font("Segoe UI", 10.0F)
         Label9.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
         Label9.Location = New Point(513, 296)
         Label9.Margin = New Padding(4, 0, 4, 0)
@@ -327,7 +327,7 @@ Partial Class studentProfile
         ' 
         Label12.Anchor = AnchorStyles.None
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 10F)
+        Label12.Font = New Font("Segoe UI", 10.0F)
         Label12.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
         Label12.Location = New Point(616, 275)
         Label12.Margin = New Padding(4, 0, 4, 0)
@@ -342,7 +342,7 @@ Partial Class studentProfile
         dvgCourse.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.0F)
         DataGridViewCellStyle2.ForeColor = Color.White
         DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
@@ -352,7 +352,7 @@ Partial Class studentProfile
         dvgCourse.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = Color.White
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.0F)
         DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
@@ -374,14 +374,14 @@ Partial Class studentProfile
         dvgCourse.ThemeStyle.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         dvgCourse.ThemeStyle.HeaderStyle.BackColor = Color.FromArgb(CByte(100), CByte(88), CByte(255))
         dvgCourse.ThemeStyle.HeaderStyle.BorderStyle = DataGridViewHeaderBorderStyle.None
-        dvgCourse.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9F)
+        dvgCourse.ThemeStyle.HeaderStyle.Font = New Font("Segoe UI", 9.0F)
         dvgCourse.ThemeStyle.HeaderStyle.ForeColor = Color.White
         dvgCourse.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         dvgCourse.ThemeStyle.HeaderStyle.Height = 4
         dvgCourse.ThemeStyle.ReadOnly = False
         dvgCourse.ThemeStyle.RowsStyle.BackColor = Color.White
         dvgCourse.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
-        dvgCourse.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9F)
+        dvgCourse.ThemeStyle.RowsStyle.Font = New Font("Segoe UI", 9.0F)
         dvgCourse.ThemeStyle.RowsStyle.ForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
         dvgCourse.ThemeStyle.RowsStyle.Height = 25
         dvgCourse.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
@@ -391,7 +391,7 @@ Partial Class studentProfile
         ' 
         Label2.Anchor = AnchorStyles.None
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 10F)
+        Label2.Font = New Font("Segoe UI", 10.0F)
         Label2.ForeColor = Color.FromArgb(CByte(127), CByte(140), CByte(141))
         Label2.Location = New Point(494, 256)
         Label2.Margin = New Padding(4, 0, 4, 0)
@@ -430,7 +430,7 @@ Partial Class studentProfile
         ' Guna2HtmlLabel1
         ' 
         Guna2HtmlLabel1.BackColor = Color.Transparent
-        Guna2HtmlLabel1.Font = New Font("Segoe UI Variable Display", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Guna2HtmlLabel1.Font = New Font("Segoe UI Variable Display", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Guna2HtmlLabel1.ForeColor = Color.White
         Guna2HtmlLabel1.Location = New Point(25, 12)
         Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
@@ -448,7 +448,7 @@ Partial Class studentProfile
         Guna2Button1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         Guna2Button1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         Guna2Button1.FillColor = Color.Red
-        Guna2Button1.Font = New Font("Segoe UI Variable Small", 12F, FontStyle.Bold)
+        Guna2Button1.Font = New Font("Segoe UI Variable Small", 12.0F, FontStyle.Bold)
         Guna2Button1.ForeColor = Color.White
         Guna2Button1.Location = New Point(775, 21)
         Guna2Button1.Name = "Guna2Button1"
@@ -460,7 +460,7 @@ Partial Class studentProfile
         ' lblAttendance
         ' 
         lblAttendance.BackColor = Color.Transparent
-        lblAttendance.Font = New Font("Segoe UI Variable Display", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAttendance.Font = New Font("Segoe UI Variable Display", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblAttendance.ForeColor = Color.White
         lblAttendance.Location = New Point(37, 12)
         lblAttendance.Name = "lblAttendance"
@@ -471,7 +471,7 @@ Partial Class studentProfile
         ' Guna2HtmlLabel2
         ' 
         Guna2HtmlLabel2.BackColor = Color.Transparent
-        Guna2HtmlLabel2.Font = New Font("Segoe UI Variable Display", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Guna2HtmlLabel2.Font = New Font("Segoe UI Variable Display", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Guna2HtmlLabel2.ForeColor = Color.White
         Guna2HtmlLabel2.Location = New Point(27, 15)
         Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
@@ -482,7 +482,7 @@ Partial Class studentProfile
         ' Label3
         ' 
         Label3.Anchor = AnchorStyles.None
-        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        Label3.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
         Label3.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
         Label3.Location = New Point(0, 370)
         Label3.Margin = New Padding(4, 0, 4, 0)
@@ -520,7 +520,7 @@ Partial Class studentProfile
         ' 
         ' studentProfile
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(937, 636)
         Controls.Add(Panel1)
