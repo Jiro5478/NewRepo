@@ -14,15 +14,15 @@
     Private Sub studentProfile_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
 
-            lblFullName.Text = SharedData.CurrentStudent("FullName")
-            lblStudentIdValue.Text = SharedData.CurrentStudent("studentId")
-            lblYearSec.Text = SharedData.CurrentStudent("YearSec")
-            lblProgram.Text = SharedData.CurrentStudent("Program")
-            lblAddress.Text = SharedData.CurrentStudent("Address")
-            lblContactNum.Text = SharedData.CurrentStudent("ContactNo")
-            lblEmailAddress.Text = SharedData.CurrentStudent("Email")
+            lblFullName.Text = SharedData.CurrentUser("FullName")
+            lblStudentIdValue.Text = SharedData.CurrentUser("studentId")
+            lblYearSec.Text = SharedData.CurrentUser("YearSec")
+            lblProgram.Text = SharedData.CurrentUser("Program")
+            lblAddress.Text = SharedData.CurrentUser("Address")
+            lblContactNum.Text = SharedData.CurrentUser("ContactNo")
+            lblEmailAddress.Text = SharedData.CurrentUser("Email")
             ' Load enrolled courses
-            SharedData.LoadStudentCourses(SharedData.CurrentStudent("studentId"), dgv)
+            SharedData.LoadStudentCourses(SharedData.CurrentUser("studentId"), dgv)
         Catch ex As Exception
             MessageBox.Show("Error loading student profile: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

@@ -22,9 +22,9 @@
 
     Private Sub StudentDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            lblFullName.Text = SharedData.CurrentStudent("FullName")
-            lblStudentID.Text = SharedData.CurrentStudent("studentId")
-            lblYearSection.Text = SharedData.CurrentStudent("YearSec")
+            lblFullName.Text = SharedData.CurrentUser("FullName")
+            lblStudentID.Text = SharedData.CurrentUser("studentId")
+            lblYearSection.Text = SharedData.CurrentUser("YearSec")
         Catch ex As Exception
             MessageBox.Show("Error loading student info: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

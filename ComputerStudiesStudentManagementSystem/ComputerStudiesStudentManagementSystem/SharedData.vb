@@ -2,7 +2,7 @@
 
 Public Module SharedData
     Private ReadOnly connectionString As String = "server=localhost;database=dbComputerStudies;user=root;password=;"
-    Public CurrentStudent As New Dictionary(Of String, String)
+    Public CurrentUser As New Dictionary(Of String, String)
 
     ' 🧩 Function 1 — Load Student Personal Info
     Public Sub LoadStudentInfo(studentId As String)
@@ -15,14 +15,14 @@ Public Module SharedData
                     cmdInfo.Parameters.AddWithValue("@studentId", studentId)
                     Using reader As MySqlDataReader = cmdInfo.ExecuteReader()
                         If reader.Read() Then
-                            CurrentStudent.Clear()
-                            CurrentStudent("studentId") = reader("studentId").ToString()
-                            CurrentStudent("FullName") = reader("FullName").ToString()
-                            CurrentStudent("YearSec") = reader("YearSec").ToString()
-                            CurrentStudent("Program") = reader("Program").ToString()
-                            CurrentStudent("Address") = reader("Address").ToString()
-                            CurrentStudent("ContactNo") = reader("ContactNo").ToString()
-                            CurrentStudent("Email") = reader("Email").ToString()
+                            CurrentUser.Clear()
+                            CurrentUser("studentId") = reader("studentId").ToString()
+                            CurrentUser("FullName") = reader("FullName").ToString()
+                            CurrentUser("YearSec") = reader("YearSec").ToString()
+                            CurrentUser("Program") = reader("Program").ToString()
+                            CurrentUser("Address") = reader("Address").ToString()
+                            CurrentUser("ContactNo") = reader("ContactNo").ToString()
+                            CurrentUser("Email") = reader("Email").ToString()
                         Else
                             MessageBox.Show("Student not found.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information)
                             Exit Sub
@@ -68,11 +68,11 @@ Public Module SharedData
                             courseList.Add(code)
                         End While
 
-                        ' Save courses in CurrentStudent dictionary
+                        ' Save courses in CurrentUser dictionary
                         If courseList.Count > 0 Then
-                            CurrentStudent("courses") = String.Join(",", courseList)
+                            CurrentUser("courses") = String.Join(",", courseList)
                         Else
-                            CurrentStudent("courses") = "No courses enrolled."
+                            CurrentUser("courses") = "No courses enrolled."
                         End If
                     End Using
                 End Using
@@ -83,10 +83,10 @@ Public Module SharedData
     End Sub
 
     Public Function GetStudentInfo() As (StudentID As String, FullName As String, YearSection As String)
-        If CurrentStudent IsNot Nothing Then
-            Dim studentID As String = CurrentStudent.GetValueOrDefault("studentId", "N/A")
-            Dim fullName As String = CurrentStudent.GetValueOrDefault("FullName", "N/A")
-            Dim yearSec As String = CurrentStudent.GetValueOrDefault("YearSec", "N/A")
+        If CurrentUser IsNot Nothing Then
+            Dim studentID As String = CurrentUser.GetValueOrDefault("studentId", "N/A")
+            Dim fullName As String = CurrentUser.GetValueOrDefault("FullName", "N/A")
+            Dim yearSec As String = CurrentUser.GetValueOrDefault("YearSec", "N/A")
 
             Return (studentID, fullName, yearSec)
         Else
