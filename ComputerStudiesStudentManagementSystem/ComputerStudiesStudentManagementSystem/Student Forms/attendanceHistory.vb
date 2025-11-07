@@ -71,7 +71,15 @@
         ' Optional: add event logic here
     End Sub
 
-    Private Sub lblAttendance_Click(sender As Object, e As EventArgs) Handles lblAttendance.Click
+    Private Sub lblStudentFullN_Click(sender As Object, e As EventArgs) Handles lblStudentFullN.Click
+
+    End Sub
+
+    Private Sub lblStudentFullName_Click(sender As Object, e As EventArgs) Handles lblStudentFullName.Click
+
+    End Sub
+
+    Private Sub btnlogout_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

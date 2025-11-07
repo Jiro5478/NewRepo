@@ -30,4 +30,8 @@
         End Try
 
     End Sub
+
+    Private Sub cmbCourse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbCourse.SelectedIndexChanged
+
+    End Sub
 End Class
