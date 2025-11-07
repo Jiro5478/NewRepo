@@ -51,6 +51,8 @@ Partial Class AdminDashboard
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         pnlSidebar = New Guna.UI2.WinForms.Guna2Panel()
@@ -60,12 +62,11 @@ Partial Class AdminDashboard
         btnFaculty = New Guna.UI2.WinForms.Guna2Button()
         btnDashboard = New Guna.UI2.WinForms.Guna2Button()
         pnlUserInfo = New Guna.UI2.WinForms.Guna2Panel()
-        lblRole = New Label()
         lblWelcome = New Label()
         pnlTop = New Guna.UI2.WinForms.Guna2Panel()
-        Guna2ControlBox3 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Guna2ControlBox2 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        winClose = New Guna.UI2.WinForms.Guna2ControlBox()
+        winMax = New Guna.UI2.WinForms.Guna2ControlBox()
+        winMin = New Guna.UI2.WinForms.Guna2ControlBox()
         btnMaximize = New Guna.UI2.WinForms.Guna2ControlBox()
         btnMinimize = New Guna.UI2.WinForms.Guna2ControlBox()
         btnClose = New Guna.UI2.WinForms.Guna2ControlBox()
@@ -73,9 +74,11 @@ Partial Class AdminDashboard
         Guna2DragControl1 = New Guna.UI2.WinForms.Guna2DragControl(components)
         Guna2DragControl2 = New Guna.UI2.WinForms.Guna2DragControl(components)
         SApnlMain = New Guna.UI2.WinForms.Guna2Panel()
+        SApnlContent = New Guna.UI2.WinForms.Guna2Panel()
         pnlSidebar.SuspendLayout()
         pnlUserInfo.SuspendLayout()
         pnlTop.SuspendLayout()
+        SApnlMain.SuspendLayout()
         SuspendLayout()
         ' 
         ' pnlSidebar
@@ -126,11 +129,11 @@ Partial Class AdminDashboard
         btnSettings.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnSettings.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnSettings.FillColor = Color.Transparent
-        btnSettings.Font = New Font("Segoe UI", 10.5F)
+        btnSettings.Font = New Font("Segoe UI Variable Small Semibol", 14.25F, FontStyle.Bold)
         btnSettings.ForeColor = Color.White
         btnSettings.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(188), CByte(156))
         btnSettings.HoverState.ForeColor = Color.White
-        btnSettings.Location = New Point(13, 331)
+        btnSettings.Location = New Point(13, 280)
         btnSettings.Margin = New Padding(4)
         btnSettings.Name = "btnSettings"
         btnSettings.ShadowDecoration.CustomizableEdges = CustomizableEdges4
@@ -148,11 +151,11 @@ Partial Class AdminDashboard
         btnUsers.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnUsers.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnUsers.FillColor = Color.Transparent
-        btnUsers.Font = New Font("Segoe UI", 10.5F)
+        btnUsers.Font = New Font("Segoe UI Variable Small Semibol", 14.25F, FontStyle.Bold)
         btnUsers.ForeColor = Color.White
         btnUsers.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(188), CByte(156))
         btnUsers.HoverState.ForeColor = Color.White
-        btnUsers.Location = New Point(13, 271)
+        btnUsers.Location = New Point(13, 220)
         btnUsers.Margin = New Padding(4)
         btnUsers.Name = "btnUsers"
         btnUsers.ShadowDecoration.CustomizableEdges = CustomizableEdges6
@@ -170,11 +173,11 @@ Partial Class AdminDashboard
         btnFaculty.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnFaculty.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnFaculty.FillColor = Color.Transparent
-        btnFaculty.Font = New Font("Segoe UI", 10.5F)
+        btnFaculty.Font = New Font("Segoe UI Variable Small Semibol", 14.25F, FontStyle.Bold)
         btnFaculty.ForeColor = Color.White
         btnFaculty.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(188), CByte(156))
         btnFaculty.HoverState.ForeColor = Color.White
-        btnFaculty.Location = New Point(13, 207)
+        btnFaculty.Location = New Point(13, 156)
         btnFaculty.Margin = New Padding(4)
         btnFaculty.Name = "btnFaculty"
         btnFaculty.ShadowDecoration.CustomizableEdges = CustomizableEdges8
@@ -192,11 +195,11 @@ Partial Class AdminDashboard
         btnDashboard.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnDashboard.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnDashboard.FillColor = Color.Transparent
-        btnDashboard.Font = New Font("Segoe UI", 10.5F)
+        btnDashboard.Font = New Font("Segoe UI Variable Small Semibol", 14.25F, FontStyle.Bold)
         btnDashboard.ForeColor = Color.White
         btnDashboard.HoverState.FillColor = Color.FromArgb(CByte(26), CByte(188), CByte(156))
         btnDashboard.HoverState.ForeColor = Color.White
-        btnDashboard.Location = New Point(13, 147)
+        btnDashboard.Location = New Point(13, 96)
         btnDashboard.Margin = New Padding(4)
         btnDashboard.Name = "btnDashboard"
         btnDashboard.ShadowDecoration.CustomizableEdges = CustomizableEdges10
@@ -208,7 +211,6 @@ Partial Class AdminDashboard
         ' pnlUserInfo
         ' 
         pnlUserInfo.BackColor = Color.FromArgb(CByte(46), CByte(139), CByte(87))
-        pnlUserInfo.Controls.Add(lblRole)
         pnlUserInfo.Controls.Add(lblWelcome)
         pnlUserInfo.CustomizableEdges = CustomizableEdges11
         pnlUserInfo.Dock = DockStyle.Top
@@ -216,31 +218,18 @@ Partial Class AdminDashboard
         pnlUserInfo.Margin = New Padding(4)
         pnlUserInfo.Name = "pnlUserInfo"
         pnlUserInfo.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        pnlUserInfo.Size = New Size(291, 139)
+        pnlUserInfo.Size = New Size(291, 66)
         pnlUserInfo.TabIndex = 0
-        ' 
-        ' lblRole
-        ' 
-        lblRole.Dock = DockStyle.Bottom
-        lblRole.Font = New Font("Segoe UI", 9F)
-        lblRole.ForeColor = Color.White
-        lblRole.Location = New Point(0, 105)
-        lblRole.Margin = New Padding(4, 0, 4, 0)
-        lblRole.Name = "lblRole"
-        lblRole.Size = New Size(291, 34)
-        lblRole.TabIndex = 1
-        lblRole.Text = "Role: SuperAdmin"
-        lblRole.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblWelcome
         ' 
         lblWelcome.Dock = DockStyle.Top
-        lblWelcome.Font = New Font("Segoe UI", 11F, FontStyle.Bold)
+        lblWelcome.Font = New Font("Segoe UI Variable Small Semibol", 14F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblWelcome.ForeColor = Color.White
         lblWelcome.Location = New Point(0, 0)
         lblWelcome.Margin = New Padding(4, 0, 4, 0)
         lblWelcome.Name = "lblWelcome"
-        lblWelcome.Size = New Size(291, 92)
+        lblWelcome.Size = New Size(291, 66)
         lblWelcome.TabIndex = 0
         lblWelcome.Text = "Welcome, User"
         lblWelcome.TextAlign = ContentAlignment.MiddleCenter
@@ -248,9 +237,9 @@ Partial Class AdminDashboard
         ' pnlTop
         ' 
         pnlTop.BackColor = Color.White
-        pnlTop.Controls.Add(Guna2ControlBox3)
-        pnlTop.Controls.Add(Guna2ControlBox2)
-        pnlTop.Controls.Add(Guna2ControlBox1)
+        pnlTop.Controls.Add(winClose)
+        pnlTop.Controls.Add(winMax)
+        pnlTop.Controls.Add(winMin)
         pnlTop.Controls.Add(btnMaximize)
         pnlTop.Controls.Add(btnMinimize)
         pnlTop.Controls.Add(btnClose)
@@ -263,46 +252,46 @@ Partial Class AdminDashboard
         pnlTop.ShadowDecoration.CustomizableEdges = CustomizableEdges28
         pnlTop.ShadowDecoration.Depth = 5
         pnlTop.ShadowDecoration.Enabled = True
-        pnlTop.Size = New Size(1093, 62)
+        pnlTop.Size = New Size(1093, 66)
         pnlTop.TabIndex = 2
         ' 
-        ' Guna2ControlBox3
+        ' winClose
         ' 
-        Guna2ControlBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox3.CustomizableEdges = CustomizableEdges15
-        Guna2ControlBox3.FillColor = Color.Transparent
-        Guna2ControlBox3.IconColor = Color.Black
-        Guna2ControlBox3.Location = New Point(1042, 3)
-        Guna2ControlBox3.Name = "Guna2ControlBox3"
-        Guna2ControlBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        Guna2ControlBox3.Size = New Size(45, 50)
-        Guna2ControlBox3.TabIndex = 9
+        winClose.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        winClose.CustomizableEdges = CustomizableEdges15
+        winClose.FillColor = Color.Transparent
+        winClose.IconColor = Color.Black
+        winClose.Location = New Point(1042, 3)
+        winClose.Name = "winClose"
+        winClose.ShadowDecoration.CustomizableEdges = CustomizableEdges16
+        winClose.Size = New Size(45, 50)
+        winClose.TabIndex = 9
         ' 
-        ' Guna2ControlBox2
+        ' winMax
         ' 
-        Guna2ControlBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox
-        Guna2ControlBox2.CustomizableEdges = CustomizableEdges17
-        Guna2ControlBox2.FillColor = Color.Transparent
-        Guna2ControlBox2.IconColor = Color.Black
-        Guna2ControlBox2.Location = New Point(991, 3)
-        Guna2ControlBox2.Name = "Guna2ControlBox2"
-        Guna2ControlBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        Guna2ControlBox2.Size = New Size(45, 50)
-        Guna2ControlBox2.TabIndex = 8
+        winMax.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        winMax.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox
+        winMax.CustomizableEdges = CustomizableEdges17
+        winMax.FillColor = Color.Transparent
+        winMax.IconColor = Color.Black
+        winMax.Location = New Point(991, 3)
+        winMax.Name = "winMax"
+        winMax.ShadowDecoration.CustomizableEdges = CustomizableEdges18
+        winMax.Size = New Size(45, 50)
+        winMax.TabIndex = 8
         ' 
-        ' Guna2ControlBox1
+        ' winMin
         ' 
-        Guna2ControlBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
-        Guna2ControlBox1.CustomizableEdges = CustomizableEdges19
-        Guna2ControlBox1.FillColor = Color.Transparent
-        Guna2ControlBox1.IconColor = Color.Black
-        Guna2ControlBox1.Location = New Point(940, 3)
-        Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Guna2ControlBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        Guna2ControlBox1.Size = New Size(45, 50)
-        Guna2ControlBox1.TabIndex = 7
+        winMin.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        winMin.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox
+        winMin.CustomizableEdges = CustomizableEdges19
+        winMin.FillColor = Color.Transparent
+        winMin.IconColor = Color.Black
+        winMin.Location = New Point(940, 3)
+        winMin.Name = "winMin"
+        winMin.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        winMin.Size = New Size(45, 50)
+        winMin.TabIndex = 7
         ' 
         ' btnMaximize
         ' 
@@ -350,7 +339,7 @@ Partial Class AdminDashboard
         lblPageTitle.AutoSize = True
         lblPageTitle.Font = New Font("Segoe UI", 14F, FontStyle.Bold)
         lblPageTitle.ForeColor = Color.FromArgb(CByte(44), CByte(62), CByte(80))
-        lblPageTitle.Location = New Point(25, 18)
+        lblPageTitle.Location = New Point(10, 19)
         lblPageTitle.Margin = New Padding(4, 0, 4, 0)
         lblPageTitle.Name = "lblPageTitle"
         lblPageTitle.Size = New Size(109, 25)
@@ -371,13 +360,26 @@ Partial Class AdminDashboard
         ' 
         ' SApnlMain
         ' 
-        SApnlMain.CustomizableEdges = CustomizableEdges29
+        SApnlMain.Controls.Add(SApnlContent)
+        SApnlMain.CustomizableEdges = CustomizableEdges31
         SApnlMain.Dock = DockStyle.Fill
-        SApnlMain.Location = New Point(291, 62)
+        SApnlMain.Location = New Point(291, 66)
         SApnlMain.Name = "SApnlMain"
-        SApnlMain.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        SApnlMain.Size = New Size(1093, 707)
+        SApnlMain.Padding = New Padding(10, 30, 10, 10)
+        SApnlMain.ShadowDecoration.CustomizableEdges = CustomizableEdges32
+        SApnlMain.Size = New Size(1093, 703)
         SApnlMain.TabIndex = 3
+        ' 
+        ' SApnlContent
+        ' 
+        SApnlContent.BorderStyle = Drawing2D.DashStyle.DashDotDot
+        SApnlContent.CustomizableEdges = CustomizableEdges29
+        SApnlContent.Dock = DockStyle.Fill
+        SApnlContent.Location = New Point(10, 30)
+        SApnlContent.Name = "SApnlContent"
+        SApnlContent.ShadowDecoration.CustomizableEdges = CustomizableEdges30
+        SApnlContent.Size = New Size(1073, 663)
+        SApnlContent.TabIndex = 0
         ' 
         ' AdminDashboard
         ' 
@@ -394,6 +396,7 @@ Partial Class AdminDashboard
         pnlUserInfo.ResumeLayout(False)
         pnlTop.ResumeLayout(False)
         pnlTop.PerformLayout()
+        SApnlMain.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -404,7 +407,6 @@ Partial Class AdminDashboard
     Friend WithEvents btnFaculty As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents btnDashboard As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnlUserInfo As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents lblRole As Label
     Friend WithEvents lblWelcome As Label
     Friend WithEvents pnlTop As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnMaximize As Guna.UI2.WinForms.Guna2ControlBox
@@ -413,8 +415,9 @@ Partial Class AdminDashboard
     Friend WithEvents lblPageTitle As Label
     Friend WithEvents Guna2DragControl1 As Guna.UI2.WinForms.Guna2DragControl
     Friend WithEvents Guna2DragControl2 As Guna.UI2.WinForms.Guna2DragControl
-    Friend WithEvents Guna2ControlBox3 As Guna.UI2.WinForms.Guna2ControlBox
-    Friend WithEvents Guna2ControlBox2 As Guna.UI2.WinForms.Guna2ControlBox
-    Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents winClose As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents winMax As Guna.UI2.WinForms.Guna2ControlBox
+    Friend WithEvents winMin As Guna.UI2.WinForms.Guna2ControlBox
     Friend WithEvents SApnlMain As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents SApnlContent As Guna.UI2.WinForms.Guna2Panel
 End Class

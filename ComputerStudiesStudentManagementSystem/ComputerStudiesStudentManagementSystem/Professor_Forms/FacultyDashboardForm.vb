@@ -18,9 +18,9 @@ Public Class DashboardForm
 
     End Sub
 
-    Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
-        Dim facultyProfileForm As New FacultyProfile()
-    End Sub
+    'Private Sub btnProfile_Click(sender As Object, e As EventArgs) Handles btnProfile.Click
+    'Dim facultyProfileForm As New FacultyProfile()
+    'End Sub
 
     Private Sub btnFacultyLoad_Click(sender As Object, e As EventArgs) Handles btnFacultyLoad.Click
 
